@@ -1,1 +1,87 @@
+# AI Assistant Prompts - Network Protocol Analysis Assignment
 
+This document contains all the prompts used to seek assistance from Claude AI for the Computer Networks Protocol Analysis.
+
+
+## HTTP Analysis Prompts
+
+**Prompt 1:**
+```
+is this correct that i have capture for http
+```
+*[Included screenshot of HTTP capture]*
+
+**Prompt 2:**
+```
+i have open w3school as http how i can see that this is what i have openend for??
+```
+
+**Prompt 3:**
+```
+6. Connection Persistence Analysis
+* **Check Connection header**: Look for "Connection: keep-alive" vs "Connection: close"
+* **Answer**: Determine if connection is persistent or not
+* **Evidence**: Provide evidence from packet captures
+gimme this again i cant understand this
+```
+
+**Prompt 4:**
+```
+is this persistent ??
+```
+*[Included HTTP response screenshot]*
+
+**Prompt 5:**
+```
+1. HTTP Response Message Count:
+· Use filter http.response
+· **Count packets = 10 packets**
+
+**Prompt 6:**
+```
+gimme google services using QUIC ... link
+```
+
+**Prompt 7:**
+```
+* **Find Initial packet**: Look for QUIC packet with "Initial" packet type
+where it is
+```
+*[Included QUIC packet details screenshot]*
+
+**Prompt 8:**
+```
+1. QUIC Version Analysis:
+· **Check Version field**: In QUIC header, note the version being used
+· **Compare**: Note differences from traditional TCP-based connections
+
+how i can check for this
+```
+
+**Prompt 9:**
+```
+5. 0-RTT vs 1-RTT Analysis
+* **Examine packet flow**: Check if 0-RTT data is present
+* **Determine**: Whether connection uses 0-RTT or 1-RTT establishment
+6. HTTP/3 vs HTTP/2 Comparison
+* **Analyze differences**: Compare QUIC-based HTTP/3 with TCP-based HTTP/2
+* **Note differences**: Connection establishment, multiplexing, packet structure
+
+how i can check this
+```
+
+**Prompt 10:**
+```
+Server Certificate Message
+* **Find Certificate packet**: Look for "Certificate" in TLS handshake
+* **Cipher suite identification**: Note the selected cipher algorithm
+how tw do this
+```
+
+**Prompt 11:**
+```
+Certificate Message Analysis
+* **Extract server certificate**: Expand certificate details
+* **Information to record**: Subject name, validity dates, subject alternative names
+ho to do thi
+```
